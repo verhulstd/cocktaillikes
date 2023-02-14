@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/index.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cocktails 4 life</h1>
+    </header>
+    <section>
+      <form action="">
+        <label for="searchfield">Search</label>
+        <input type="text" id="searchfield" />
+        <button>
+          <svg class="icon">
+            <use href="./icons/icons.svg#icon-search" />
+          </svg>
+        </button>
+      </form>
+      <!-- ul.cocktailgrid>li*18>(.imgHolder>img[src="https://picsum.photos/id/$0/500/300"])+p>lorem2 -->
+      <ul class="cocktailgrid"></ul>
+    </section>
+    <aside>A</aside>
+    <footer>F</footer>
+    <template id="cocktailcard">
+      <li>
+        <div class="imgHolder">
+          <img src="%IMG%" alt="%NAME%" />
+        </div>
+        <div class="info">
+          <p>%NAME%</p>
+          <button
+            class="likeBtn"
+            data-id="%ID%"
+            data-img="%IMG%"
+            data-name="%NAME%"
+            data-status="%STATUS%"
+          >
+            <svg class="icon">
+              <use href="./icons/icons.svg#icon-heart-%STATUS%" />
+            </svg>
+          </button>
+        </div>
+      </li>
+    </template>
+  </body>
+</html>
